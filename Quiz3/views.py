@@ -17,5 +17,10 @@ def jobOpenings_list_view(request):
     }
     return render(request, 'list_view.html', context)
 
-def RegisterForms(request):
+def accounts(request, id=1):
+    obj = accounts.objects.get(id=id)
+    print(obj)
+    context = {
+        'object': obj
+    }
     return render(request, 'register.html')
