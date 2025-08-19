@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for foo in query %}
+    {{ foo.title }}<br>
+    {{ foo.description }}<br>
+    {{ foo.posted_date }}<br>
+    {{ foo.is_active }}<br>
+
+{% endfor %}
+
+</body>
+</html>
